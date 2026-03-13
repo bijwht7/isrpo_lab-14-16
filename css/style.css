@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f5f5f5;
+    color: #333;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*header*/
+header{
+    background: #111;
+    color: white;
+    padding: 15px 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: red;
+}
+
+/*hero*/
+.hero{
+    background: url("https://img.freepik.com/premium-photo/ufo-object-flying-sky_443830-26627.jpg?semt=ais_hybrid&w=740&q=80");
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-text{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #1c242b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #530505;
+}
+
+/*products*/
+
+.products{
+    padding: 50px 0;
+}
+
+.products h2{
+    margin-bottom: 30px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card h3{
+    margin: 10px 0;
+}
+
+.price{
+    color: #611d1d;
+    font-weight: bold;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgda(0, 0, 0, 0.2);
+}
+
